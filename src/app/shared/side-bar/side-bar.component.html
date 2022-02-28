@@ -2,17 +2,8 @@
     <h1 class="d-flex text-center mb-3 mb-md-0 me-md-auto">#Gif 3un1c3</h1>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto list-group list-reset">
-      <li class="nav-item list-group-item list-group-item-action">
-        <a href="" class="text-dark nav-link text-decoration-none"><i class="fa-solid fas fa-dove"></i> Peace</a>
-      </li>
-      <li class="nav-item list-group-item list-group-item-action">
-        <a href="" class="text-dark nav-link text-decoration-none"><i class="fa-solid fas fa-heart"></i> Love</a>
-      </li>
-      <li class="nav-item list-group-item list-group-item-action">
-        <a href="" class="text-dark nav-link text-decoration-none"><i class="fa-solid fas fas fa-running"></i> Aventure</a>
-      </li>
-      <li class="nav-item list-group-item list-group-item-action">
-        <a href="" class="text-dark nav-link text-decoration-none"><i class="fa-solid fas fab fas fa-code"></i> Developer</a>
+      <li class="nav-item list-group-item list-group-item-action" *ngFor="let historial of history; index as i">
+        <a href="" class="text-dark nav-link text-decoration-none"><i class="fa-solid fas fab fas fa-code"></i> {{ historial }} </a>
       </li>
     </ul>
   </div>
